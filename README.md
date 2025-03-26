@@ -35,3 +35,6 @@ Styling: Tailwind CSS
 Routing: React Router DOM
 
 Icons: React Icons
+
+🔗 Project Link
+https://small-e-commerce-ten.vercel.app/
