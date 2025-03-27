@@ -3,14 +3,14 @@ import "./card.css";
 import { Link } from "react-router-dom";
 
 export default function Card({ item }) {
-  const { image, title, id, price, count } = item;
+  const { image, title, id, price } = item;
 
   return (
     <>
       <div className=" mx-auto  relative">
         <div className="w-full relative">
-          {count === 0 && (
-            <div className="w-16 h-16 font-jost  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#B1B1B1] text-white text-sm font-bold  flex items-center justify-center text-center rounded-full">
+          {item.rating?.count === 0 && (
+            <div className="absolute top-3 left-3 bg-[#B1B1B1] text-white text-sm font-bold px-3 py-1 rounded-full">
               SOLD OUT
             </div>
           )}

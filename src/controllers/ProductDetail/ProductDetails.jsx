@@ -47,7 +47,7 @@ export default function Cart() {
   const emptyStars = maxStars - filledStars;
 
   return (
-    <div className="md:flex  md:flex-row flex flex-col items-center justify-between pb-5 md:gap-x-20 w-[100%]">
+    <div className="md:flex  md:flex-row flex flex-col md:items-start items-center justify-between pb-5 md:gap-x-20 w-[100%]">
       <div className="md:w-[50%] w-full ">
         <img
           className="w-full "
@@ -145,16 +145,16 @@ export default function Cart() {
           </div>
         </div>
 
-        <div className="flex items-center justify-start gap-x-2 text-lg border-b py-4">
+        <div className=" flex items-center justify-start gap-x-2 text-lg border-b py-4">
           <CiShare2 />
           <span>share</span>
         </div>
-        <div className="flex items-center justify-start gap-x-2  py-2">
+        <div className="text-sm flex items-center justify-start gap-x-2  py-2">
           <LiaShippingFastSolid size={25} />
           <span className="font-semibold">Estimated Delivery:</span>
           <span>Jul 30 - Aug 03</span>
         </div>
-        <div className="flex items-center justify-start gap-x-2 pb-8">
+        <div className="text-sm flex items-center justify-start gap-x-2 pb-8">
           <PiShippingContainerThin size={25} />
           <span className="font-semibold">Free Shipping & Returns: </span>
           <span>On all orders over $75</span>
@@ -164,11 +164,9 @@ export default function Cart() {
           <img
             src="/checkout.png"
             alt="checkout"
-            className="object-cover w-full px-28"
+            className="object-cover w-full px-12"
           />
-          <h4 className="pt-5 md:px-32 text-sm">
-            Guarantee safe & secure checkout
-          </h4>
+          <h4 className="pt-5  text-sm">Guarantee safe & secure checkout</h4>
         </div>
       </div>
     </div>
